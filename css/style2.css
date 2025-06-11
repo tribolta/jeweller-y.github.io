@@ -1,0 +1,389 @@
+/* CSS Document */
+@font-face {
+    font-family: 'economicaregular';
+    src: url('fonts/eco-webfont.eot');
+    src: url('fonts/eco-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/eco-webfont.woff') format('woff'),
+         url('fonts/eco-webfont.ttf') format('truetype'),
+         url('fonts/eco-webfont.svg#economicaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GOST';
+    src: url('fonts/gost_a_.eot');
+    src: url('fonts/gost_a_.eot') format('embedded-opentype'),
+         url('fonts/gost_a_.woff2') format('woff2'),
+         url('fonts/gost_a_.woff') format('woff'),
+         url('fonts/gost_a_.ttf') format('truetype'),
+         url('fonts/gost_a_.svg#GOST') format('svg');
+}
+
+*{
+  padding:0; margin:0;
+	}
+body{
+	background: #97989b url(../images/2.jpg)  no-repeat center  fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+	}
+.main{
+	width:970px;
+	margin:0 auto;
+	padding: 0 30px 10px 30px;
+	position: relative;
+	}
+	.head h1{
+			white-space: nowrap;
+		   width:250px;
+		   font-size: 44px;
+		   font-family: 'economicaregular', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+		   color: #FFF; 
+		   margin-top:18px;
+		   text-shadow: 2px 2px 2px #d31d6a;
+		   }
+#menu-icon{
+		display: none;
+		}		   
+	.menu{
+	  list-style: none;
+	  position: absolute;
+	  top:20px;
+	  right:30px;
+	  }
+	.menu li{
+		float:left;
+		padding: 3px 0 0 18px;
+		text-shadow: 2px 2px 2px #000000;
+		}
+		.menu li a, .menu li a:hover, .menu li a.active{
+			font:18px Segoe, "Segoe UI", Verdana, sans-serif;
+			}
+			.menu li a{
+				 color:#FFF; text-decoration:none;
+		         }
+	   	    .menu li a:hover{
+				 color:#FFF; text-decoration: underline;
+		         }
+		    .menu li a.active{
+				 color:#d8427b; text-decoration:none;
+				 }
+			
+
+#img_all{
+	position:absolute;
+	top:180px;
+	right:20px;
+	float:right;
+	width:50%;
+}
+#img_allR{
+	position:absolute;
+	top:260px;
+	right:-10px;
+	float:right;
+	width:55%;
+}
+#img_allG{
+	position:absolute;
+	top:90px;
+	right:60px;
+	float:right;
+	width:40%;
+}
+
+.text{
+/*background:#d8427b;*/
+width:470px;
+margin:30px 0 0 0;
+padding:15px;
+line-height:5;
+text-shadow: 2px 2px 2px #000000;
+}
+	
+	.text h1{
+	font-family: 'economicaregular', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	color: #FFF;
+	height:120px;
+	}
+	 h2{
+	font-family: 'GOST', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	color: #FFF;
+	font-size:32px;
+	height:120px;
+	}
+	 h3{
+	font-family: 'economicaregular', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	color: #FFF;
+	letter-spacing:1px;
+	height:110px;
+	font-size:28px;
+	}
+	 h3 span{
+	font-family: 'GOST', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	}
+	 p{
+	text-align:left;
+	font:20px Segoe, "Segoe UI", Verdana, sans-serif;
+	color:#FFF;
+}
+.text-small{
+display:none;
+}
+.button{
+	position: absolute;
+	top:500px;
+	margin:30px 0 0 0;
+	right:100px;
+	}
+	.button a img{
+	padding-left:10px;
+	vertical-align:middle;
+	}
+
+		/*     small    */
+		
+@media screen and (max-width: 768px) {
+	
+	.main{
+		width:620px;
+		
+		padding: 0;
+		}
+	.head h1{
+		font-size:35px;
+		position:absolute;
+		top: 10px;
+		right:-20px;
+		}
+	.buttons{
+		position: relative;
+		z-index: 4;
+		}	
+	.menu{
+		width:550px;
+		top: 80px;
+		left: 25px;
+		}
+	.menu a{
+		margin-left: 15px;
+		}
+#img_all{
+	width:450px;
+	left:90px;
+	top:200px;
+	}
+#img_allR{
+	width:600px;
+	left:30px;
+	top:200px;
+}
+#img_allG{
+	width:360px;
+	top:130px;
+	left:130px;
+}
+
+	.text {
+	display:none;
+	}
+	.text-small{
+	display:block;
+	width:100%;
+	margin:30px 0 0 0;
+	padding:15px 15px 30px 15px;
+	top:450px;
+	position:absolute;
+	text-shadow: 2px 2px 2px #000000;
+	}
+	
+	.text-small h3{
+	height:30px;
+	font-size:24px;
+	margin-top:20px;
+	}
+	.text-small p{
+	font:16px;
+	}
+	.button{
+	top:450px;
+	right:30px;
+	}
+}
+
+
+		/*iphone5 (landscape)*/
+
+@media only screen and (max-width : 568px) {
+
+	.main{
+		width:500px ;
+		margin: 0;
+		padding: 0;
+		}
+	.head h1{
+		white-space: nowrap;
+		width:120px;
+		font-size:25px;
+		position: absolute;
+		margin:10px;
+		right:0px;
+		}
+	#menu-icon{
+		color:#fff;
+		font-size:24px;
+		text-align: center;
+		width: 79px;
+		height: 35px;
+		position:absolute;
+		margin:20px 0 0 17px;
+		background: #999;
+		cursor: pointer;
+		border:solid 1px #16126b;
+		display: block;
+		border-radius: 5px;
+        box-shadow: 4px 4px 5px rgba(0,0,0,.3);
+        z-index: 9;
+		}
+	#nav{
+		clear: both;
+		position:absolute;
+		top:50px;
+		left:17px;
+		width: 69px;
+		z-index: 8;
+		padding: 5px;
+		background: #999;
+		border: solid 1px #16126b;
+		display: none;
+		opacity: .8;
+		border-radius: 5px;
+        box-shadow: 4px 4px 5px rgba(0,0,0,.3);
+		}
+	.menu li{
+		padding-left: 0;
+		}
+	.menu a{
+		margin-left: 0;
+		}
+	.menu li a, .menu li a:hover, .menu li a.active{
+		font-size:15px;
+		}
+#img_all{
+	width:350px;
+	top:90px;
+	left:100px;
+	}
+#img_allR{
+	width:400px;
+	left:80px;
+	top:100px;
+}
+#img_allG{
+	width:270px;
+	top:40px;
+	left:130px;
+}
+
+.text-small{
+	top:250px;
+	
+	}
+	.text-small h3{
+	font-size:24px;
+	}
+	.text-small p{
+	font-size:18px;
+	}
+.button{
+	top:270px;
+	right:50px;
+	}
+}
+
+
+		/* Smartphones (landscape) ----------- */
+			
+@media only screen and (max-width : 480px) {
+
+	.main{
+		width:450px ;
+		margin: 0;
+		padding: 0;
+		}
+	#img_all{
+	width:320px;
+	left:70px;
+	top:100px;
+	}
+	#img_allR{
+	width:370px;
+	left:60px;	
+	top:110px;
+	}
+	#img_allG{
+	width:250px;
+	left:100px;
+	}
+	
+	.text-small{
+	top:250px;
+	width:430px;
+	}
+	.text-small h3{
+	top:-180px;
+	left:110px;
+	font-size:23px;
+	}
+	.text-small p{
+	font-size:17px;
+	}
+	.button{
+	right:60px;
+	}
+}
+
+
+		/* Smartphones (portrait) ----------- */
+
+@media only screen and (max-width : 320px) {
+
+	.main{
+		width:290px ;
+		margin: 0;
+		padding: 0;
+		}
+	#img_all{
+	width:250px;
+	left:30px;
+	top:120px;
+	}
+	#img_allR{
+	width:270px;
+	left:20px;
+	top:110px;
+	}
+	#img_allG{
+	width:200px;
+	top:80px;
+	left:30px;
+	}
+	.text-small{
+	width:270px;
+	}
+	.text-small h3{
+	font-size:22px;
+	}
+	.text-small p{
+	font-size:16px;
+	}
+	.button{
+	top:250px;
+	right:10px;
+	}
+	.button a img{
+	padding:0px;
+	}
+}
