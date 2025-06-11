@@ -1,0 +1,332 @@
+div.content {
+	/* The display of content is enabled using jQuery so that the slideshow content won't display unless javascript is enabled. */
+	display: none;
+	float: right;
+	width: 500px; 
+}
+/*  навигация вверху и внизу */
+div.content a, div.navigation a {
+	text-decoration: none;
+	color: #292d75;
+}
+div.content a:focus, div.content a:hover, div.content a:active {
+	text-decoration: underline;
+}
+/*  отступ между меню и слайдшоу */
+div.controls {
+	margin-top: 27px;
+	height: 23px;
+}
+div.controls a {
+	padding: 5px;
+}
+div.ss-controls {
+	float: left;
+	margin-left:0;
+	font-size:18px;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+div.nav-controls {
+	float: right;
+	font-size:18px;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+div#gallery{
+position: relative;
+}
+div.slideshow-container {
+	position: absolute;
+	width:500px;
+	top: 69px;
+	left:0px;
+	clear: both;
+	height: 350px; /* This should be set to be at least the height of the largest image in the slideshow */
+	z-index: 3;
+}
+div.loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url('loader.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 500px;
+	height: 350px; /* This should be set to be at least the height of the largest image in the slideshow */
+}
+div.slideshow {
+
+}
+div.slideshow span.image-wrapper {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+div.slideshow a.advance-link {
+	display: block;
+	width: 500px;
+	height: 350px; /* This should be set to be at least the height of the largest image in the slideshow */
+	line-height: 350px; /* This should be set to be at least the height of the largest image in the slideshow */
+	text-align: center;
+}
+div.slideshow a.advance-link:hover, div.slideshow a.advance-link:active, div.slideshow a.advance-link:visited {
+	text-decoration: none;
+	}
+/*  большая рамка */
+div.slideshow img {
+	vertical-align: middle;
+	border: 1px solid #292d75;
+	position: absolute;
+	right:-1px;
+}
+div.download {
+	float: right;
+}
+div.caption-container {
+	position: relative;
+	clear: left;
+	height: 75px;
+}
+span.image-caption {
+	display: block;
+	position: absolute;
+	width: 510px;
+	top: 0;
+	left: 0;
+}
+div.caption {
+	padding: 12px;
+}
+/* название картинки */
+div.image-title {
+	font-weight: bold;
+	font-size: 42px;
+	font-family: 'economicaregular', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	color:#d31d6a;
+	top: 430px;
+	position:absolute;
+	text-shadow: 2px 2px 2px #FFF;
+}
+div.image-title span{
+font-size: 0.7em;
+top: 10px;
+position:relative;
+float: right;
+}
+/* описание картинки */
+div.image-desc {
+	line-height: 1.3em;
+	padding-top: 12px;
+	margin:0 0 30px 0;
+	font-size: 20px;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-style:italic;
+	font-weight:600;
+	color:#292d75;
+	top: 485px;
+	left:0;
+	position:absolute;
+	}
+div.navigation {
+	/* The navigation style is set using jQuery so that the javascript specific styles won't be applied unless javascript is enabled. */
+	/*добавил три строки для смещения минигалереи при адаптивном дизайне*/
+	width:300px;
+	float:left;
+	position:relative;
+	top: 65px;
+	left: 0;
+}
+ul.thumbs {
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+ul.thumbs li {
+	float: left;
+	padding: 0;
+	margin: 5px 10px 5px 0;
+	list-style: none;
+}
+/* маленькая рамка */
+a.thumb {
+	padding: 2px;
+	display: block;
+	border: 1px solid #292d75;
+}
+ul.thumbs li.selected a.thumb {
+	background: #292d75;
+}
+a.thumb:focus {
+	outline: none;
+}
+ul.thumbs img {
+	border: none;
+	display: block;
+}
+div.pagination {
+	clear: both;
+}
+div.navigation div.top {
+	margin-bottom: 12px;
+	height: 11px;
+}
+div.navigation div.bottom {
+	margin-top: 12px;
+}
+/* отступ меню внизу */
+div.pagination a, div.pagination span.current, div.pagination span.ellipsis {
+	display: block;
+	float: left;
+	margin-top:30px;
+	margin-left:20px;
+	padding: 4px 7px 2px 7px;
+	font-size: 18px;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+div.pagination a:hover {
+	background-color: #e9e8ee;
+	text-decoration: none;
+}
+/* был фон нажатой кнопки навигации background-color: #211d59; */
+div.pagination span.current {
+	font-weight: bold;
+	border-color: #000;
+	color: #fff;
+}
+div.pagination span.ellipsis {
+	border: none;
+	padding: 5px 0 3px 2px;
+}
+			
+			/*small*/
+
+@media screen and (max-width: 768px) {
+	
+	div.ss-controls, div.nav-controls{
+		display:none;
+		}
+		
+	div.slideshow-container{
+	top: 150px;
+	left: -60px;
+		}
+	div.navigation{
+		width: 370px;
+		top:570px;
+		left:135px;
+		}	
+	div.image-title{
+		top:520px;
+		font-size: 1.9em;
+		left: 20px;
+		}
+	 div.image-title span{
+		font-size: 0.8em;
+		top: 8px;
+		margin-left: 20px;
+		}
+	div.image-desc{
+		top:560px;
+		font-size:1.1em;
+		left: 20px;
+		}
+}
+
+			/*iphone5 (landscape)*/
+
+@media only screen and (max-width : 568px) {
+
+div.nav-controls,div.navigation  {
+		display:none;
+		}
+div.ss-controls{
+		display: block;
+		position:absolute;
+		left: 145px;
+		font-size: 14px;
+		z-index: 5;
+		}
+div.slideshow img{
+		width: 300px;
+		height:210px;
+		position: absolute;
+		top:0;
+		left:0;
+		}
+	div.slideshow-container,
+	div.slideshow span.image-wrapper,
+	div.slideshow a.advance-link,
+	div.slideshow a.advance-link:hover,
+	div.slideshow a.advance-link:active, 
+	div.slideshow a.advance-link:visited{
+		width: 300px;
+		height:210px;
+		position: absolute;
+		margin:0;
+		top: 18px;
+		left: 50px;
+		line-height: 210px;
+		text-align: center;
+		}
+	div.image-title{
+		font-size: 1.3em;
+		left: 100px;
+		top:220px;
+		}
+	div.image-title span{
+		top: 0px;
+		float: none;
+		}
+	div.image-desc{
+		font-size:0.9em;
+		left: 100px;
+		top: 235px;
+		padding-bottom:20px;
+		}
+}
+
+			/* Smartphones (portrait) ----------- */
+			
+@media only screen and (max-width : 320px) {
+
+	div.ss-controls, div.nav-controls{
+		display:none;
+		}
+	div.slideshow-container,
+	div.slideshow span.image-wrapper,
+	div.slideshow a.advance-link,
+	div.slideshow a.advance-link:hover,
+	div.slideshow a.advance-link:active, 
+	div.slideshow a.advance-link:visited{
+		width: 300px;
+		height:210px;
+		position: absolute;
+		margin:0;
+		top: 25px;
+		left: 73px;
+		line-height: 210px;
+		text-align: center;
+		}
+	div.image-title{
+		font-size: 1.3em;
+		left: 240px;
+		top:260px;
+		}
+	div.image-title span{
+		float:right;
+		top: 3px;
+		}
+	div.image-desc{
+		font-size:0.9em;
+		left: 240px;
+		top: 280px;
+		}
+	div.navigation{
+		display:block;
+		width: 280px;
+		top:270px;
+		left:27px;
+		padding: 0 0 20px 0px;
+		}
+}
+
