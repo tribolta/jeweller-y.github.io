@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>Contact</title>
+      <meta name="description" content="schmuck aus gold und silber; im auftrag;  "/>
+        <meta name="keywords" content="goldschmied, jewellery, schmuck, alexander, yurasov, auftrag, gold, Lindau" />
+         <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
+       <link rel="stylesheet" type="text/css" href="css/style.css" />
+       <link rel="shortcut icon" href="images/icon.ico" type="image/ico" />
+           <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+  </head>
+  <body>
+     <div class="main">
+         <div class="head">
+           <h1>Alex Yurasov</h1>
+         </div>
+         <div id="nav-wrap" class="buttons">
+            <ul id="nav" class="menu">
+                <li><a href="index.html">home</a></li>
+                <li><a href="rings.html">rings</a></li>
+                <li><a href="earrings.html">earrings</a></li>
+                <li><a href="necklaces.html">necklaces</a></li>
+                <li><a href="oeuvre.html">oeuvre</a></li>
+                <li><a class="active" href="contact.html">contact</a></li>
+            </ul>
+         </div>
+         <div class="up">
+				<h1><span>Moscow <</span> Jeweller-Y <span>> Lindau</span></h1>
+				<p>GOLD and SILVER JEWELLERY</p>
+		 </div>
+   		<div class="myfoto">
+              <img src="images/foto3.jpg" class="myfoto1" width="250" height="350" alt="myfoto" />
+            <div class="contact">
+            <pre>Telefon: +49 160 99271460 Germany <br>          +7 926 5903267   Russia <br>E-Mail: Alex.Yurasov@jeweller-y.com</pre>
+            </div>
+        </div>
+    <script type="text/javascript">
+jQuery(document).ready(function($){
+$('#nav-wrap').prepend('<div id="menu-icon">&#9776;</div>');
+    $("#menu-icon").on("click", function(){
+    $("#nav").slideToggle();
+        $(this).toggleClass("active");
+    });
+    });
+     </script>
+    </div>
+  </body>
+</html>
