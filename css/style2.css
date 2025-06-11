@@ -128,9 +128,13 @@ text-shadow: 2px 2px 2px #000000;
 	text-align:left;
 	font:20px Segoe, "Segoe UI", Verdana, sans-serif;
 	color:#FFF;
+	text-align:justify;
 }
 .text-small{
 display:none;
+}
+.text-small p{
+text-align:justify;
 }
 .button{
 	position: absolute;
@@ -219,7 +223,8 @@ display:none;
 @media only screen and (max-width : 568px) {
 
 	.main{
-		width:500px ;
+		top:20px;
+		width:530px ;
 		margin: 0;
 		padding: 0;
 		}
@@ -229,7 +234,7 @@ display:none;
 		font-size:25px;
 		position: absolute;
 		margin:10px;
-		right:0px;
+		right:50px;
 		}
 	#menu-icon{
 		color:#fff;
@@ -238,7 +243,7 @@ display:none;
 		width: 79px;
 		height: 35px;
 		position:absolute;
-		margin:20px 0 0 17px;
+		margin:20px 0 0 37px;
 		background: #999;
 		cursor: pointer;
 		border:solid 1px #16126b;
@@ -251,7 +256,7 @@ display:none;
 		clear: both;
 		position:absolute;
 		top:50px;
-		left:17px;
+		left:37px;
 		width: 69px;
 		z-index: 8;
 		padding: 5px;
@@ -313,6 +318,9 @@ display:none;
 		margin: 0;
 		padding: 0;
 		}
+	.head h1{
+		right:50px;
+		}
 	#img_all{
 	width:320px;
 	left:70px;
@@ -345,15 +353,21 @@ display:none;
 	}
 }
 
+/* iPhone 12, 12 Pro, 13, 13 Pro (портретный режим) */	
 
-		/* Smartphones (portrait) ----------- */
-
-@media only screen and (max-width : 320px) {
-
+@media only screen and (max-width: 428px) {
 	.main{
-		width:290px ;
-		margin: 0;
-		padding: 0;
+		width:315px ;
+		margin:0 auto;
+		}
+	.head h1{
+		right:50px;
+		}
+	#menu-icon{
+		margin:20px 0 0 6px;
+		}
+	#nav{
+		left:6px;
 		}
 	#img_all{
 	width:250px;
@@ -363,15 +377,15 @@ display:none;
 	#img_allR{
 	width:270px;
 	left:20px;
-	top:110px;
+	top:130px;
 	}
 	#img_allG{
 	width:200px;
 	top:80px;
-	left:30px;
+	left:40px;
 	}
 	.text-small{
-	width:270px;
+	width:auto;
 	}
 	.text-small h3{
 	font-size:22px;
@@ -381,7 +395,55 @@ display:none;
 	}
 	.button{
 	top:250px;
-	right:10px;
+	right:20px;
+	}
+	.button a img{
+	padding:0px;
+	}
+}
+
+		/* Smartphones (portrait) ----------- */
+
+@media only screen and (max-width : 320px) {
+
+	.main{
+		width:290px ;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0;
+		}
+	#menu-icon{
+		margin:20px 0 0 17px;
+		}
+	#nav{
+		left:17px;
+	#img_all{
+	width:250px;
+	left:20px;
+	top:120px;
+	}
+	#img_allR{
+	width:270px;
+	left:10px;
+	top:110px;
+	}
+	#img_allG{
+	width:200px;
+	top:80px;
+	left:30px;
+	}
+	.text-small{
+	width:auto;
+	}
+	.text-small h3{
+	font-size:22px;
+	}
+	.text-small p{
+	font-size:16px;
+	}
+	.button{
+	top:250px;
+	right:20px;
 	}
 	.button a img{
 	padding:0px;

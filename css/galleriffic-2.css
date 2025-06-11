@@ -284,7 +284,50 @@ div.slideshow img{
 		padding-bottom:20px;
 		}
 }
+	/* iPhone 12, 12 Pro, 13, 13 Pro (портретный режим) */	
+@media only screen and (max-width : 428px) {
 
+	div.ss-controls, div.nav-controls{
+		display:none;
+		}
+	div.slideshow-container,
+	div.slideshow span.image-wrapper,
+	div.slideshow a.advance-link,
+	div.slideshow a.advance-link:hover,
+	div.slideshow a.advance-link:active, 
+	div.slideshow a.advance-link:visited{
+		width: 300px;
+		height:260px;
+		position: absolute;
+		margin:0;
+		top: 25px;
+		left: 63px;
+		line-height: 210px;
+		text-align: center;
+		}
+	div.image-title{
+		font-size: 1.3em;
+		left: 210px;
+		top:260px;
+		}
+	div.image-title span{
+		float:right;
+		top: 3px;
+		}
+	div.image-desc{
+		width:290px;
+		font-size:0.9em;
+		left: 210px;
+		top: 280px;
+		}
+	div.navigation{
+		display:block;
+		width: 280px;
+		top:270px;
+		left:27px;
+		padding: 0 0 20px 0px;
+		}
+}
 			/* Smartphones (portrait) ----------- */
 			
 @media only screen and (max-width : 320px) {
